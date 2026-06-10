@@ -68,6 +68,8 @@ app.get("/", async (req, res) => {
   }
 
   res.status(200).json({
+    page,
+    limit,
     data: combinedData.slice(start, end),
   });
 });
