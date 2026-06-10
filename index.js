@@ -57,23 +57,6 @@ app.get("/", async (req, res) => {
       return res.status(500).json({ error: warnings });
     }
   });
-  //   if (results[0].status === "fulfilled") {
-  //     const value1 = results[0].value.map((item) => ({
-  //       id: item.id,
-  //       name: item.prodName,
-  //       price: item.price * converCurrency,
-  //     }));
-  //     combinedData.push(...value1);
-  //   }
-  //   if (results[1].status === "fulfilled") {
-  //     const value2 = results[1].value.map((item) => ({
-  //       id: item.id,
-  //       name: item.productName,
-  //       price: item.price * converCurrency,
-  //     }));
-  //     combinedData.push(...value2);
-  //   }
-  //   console.log(combinedData);
 
   const search = (req.query.search || "").toString().trim().toLowerCase();
 
